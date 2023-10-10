@@ -145,12 +145,10 @@ Sub StockAnalysis():
             If Range("K" & i).Value = MaxDecrease Then
                 
                 MaxDecreaseTicker = Range("I" & i).Value
-                MaxVolumeTicker = Range("I" & i).Value 'Have to store this way in case max volume is also the biggest decrease/increase
                 
             ElseIf Range("K" & i).Value = MaxIncrease Then
             
                 MaxIncreaseTicker = Range("I" & i).Value
-                MaxVolumeTicker = Range("I" & i).Value 'Have to store this way in case max volume is also the biggest decrease/increase
                 
             ElseIf Range("L" & i).Value = MaxVolume Then
             
